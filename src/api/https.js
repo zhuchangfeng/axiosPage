@@ -39,6 +39,8 @@ function requestFN(o) {
     //基础请求方法
     //o.type //请求类型
     //o.url //请求路径
+    // o.params //地址带参数
+    // o.data //请求带参数
     var obj = {
         method: o.type, //请求的类型
         url: BaseUrl + o.url //请求地址
