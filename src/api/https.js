@@ -36,10 +36,11 @@ axios.interceptors.response.use(
 // 请求超时时间
 axios.defaults.timeout = 10000;
 function requestFN(o) {
-    //基础请求方法
+    //o.method //请求类型//基础请求方法
     //o.type //请求类型
     //o.url //请求路径
     // o.params //地址带参数
+    // or
     // o.data //请求带参数
     var obj = {
         method: o.type, //请求的类型
