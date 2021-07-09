@@ -4,24 +4,24 @@
 
 <script>
 var axios = require("axios");
-import { createAxios } from '@/utils/axios/index';
+import { createAxios } from "@/utils/axios/index";
 export default {
   data() {
     return {};
   },
   mounted() {
-    console.log(this)
+    console.log(this);
     createAxios()
-          .get(
-            {
-              url: '/recommend/homepage3700?scheme=https&APPOS_VERSION=v3.9.1&page=1'
-            },
-            { responseData: 'default', headers: { ignoreCancelToken: true } }
-          )
-          .then((r) => {
-            console.log(r);
-          });
-  }
+      .get(
+        {
+          url: "/recommend/homepage3700?scheme=https&APPOS_VERSION=v3.9.1&page=1",
+        },
+        { responseData: "default", headers: { ignoreCancelToken: true } }
+      )
+      .then((r) => {
+        console.log(r);
+      });
+  },
 };
 </script>
 
