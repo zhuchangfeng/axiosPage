@@ -14,8 +14,7 @@ export default {
     createAxios()
           .get(
             {
-              url: '/recommend/homepage3700?scheme=https&APPOS_VERSION=v3.9.1&page=1',
-              params: '/22',
+              url: '/recommend/homepage3700?scheme=https&APPOS_VERSION=v3.9.1&page=1'
             },
             { responseData: 'default', headers: { ignoreCancelToken: true } }
           )
