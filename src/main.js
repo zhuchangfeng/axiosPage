@@ -4,11 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/index'
-import echarts from 'echarts'
-import https from './api/https'
 require('./style/public.less');
-Vue.use(echarts)
-Vue.use(https);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

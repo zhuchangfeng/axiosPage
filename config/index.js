@@ -3,7 +3,7 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-const host = "https://echarts.baidu.com/examples/";
+const host = "https://m.yidoutang.com/apiv3/";
 module.exports = {
   dev: {
 
