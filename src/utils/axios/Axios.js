@@ -35,6 +35,7 @@ export class Axios {
       });
     } else {
       formData.append(params.name || 'file', params.file, params.filename);
+      params.name && delete params.name;
       delete params.file;
       delete params.filename;
       Object.keys(params).forEach((key) => {
@@ -66,9 +67,11 @@ export class Axios {
       }
     );
   }
+  // get
   get(config, options) {
     return this.request({ ...config, method: 'GET' }, options);
   }
+  // post
   post(config, options) {
     return this.request({ ...config, method: 'POST' }, options);
   }
